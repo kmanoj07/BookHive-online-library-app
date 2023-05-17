@@ -1,3 +1,10 @@
+spring.application.name: bookhive-data-loader
+
+datadump.location:
+  author: ol_dump_authors_2023-03-31.txt
+  works: ol_dump_works_2023-03-31.txt
+
+
 spring:
   main:
     allow-circular-references: true

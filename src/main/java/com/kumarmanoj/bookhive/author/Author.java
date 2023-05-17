@@ -46,6 +46,4 @@ public class Author {
     public void setPersonName(String personName) {
         this.personName = personName;
     }
-
-    
 }
