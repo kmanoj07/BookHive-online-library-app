@@ -166,7 +166,7 @@ public class BookhiveApplication {
 		// System.out.println(authorDumpLocation);
 		// lets initialize the authors() and works
 		// initAuthors();
-		initWorks();
+		// initWorks();
 	}
 
 	@Bean
