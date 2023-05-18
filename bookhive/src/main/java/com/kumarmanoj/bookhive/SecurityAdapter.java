@@ -1,4 +1,4 @@
-package com.kumarmanoj.springstartedgithublogin;
+package com.kumarmanoj.bookhive;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;

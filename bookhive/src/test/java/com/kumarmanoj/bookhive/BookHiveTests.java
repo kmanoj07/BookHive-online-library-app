@@ -1,10 +1,10 @@
-package com.kumarmanoj.springstartedgithublogin;
+package com.kumarmanoj.bookhive;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringStartedGithubLoginApplicationTests {
+class BookHiveTests {
 
     @Test
     void contextLoads() {

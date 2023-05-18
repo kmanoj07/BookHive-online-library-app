@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kumarmanoj</groupId>
-    <artifactId>spring-started-github-login</artifactId>
+    <artifactId>bookhive</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-started-github-login</name>
-    <description>spring-started-github-login</description>
+    <name>bookhive</name>
+    <description>bookhive</description>
     <properties>
         <java.version>17</java.version>
     </properties>

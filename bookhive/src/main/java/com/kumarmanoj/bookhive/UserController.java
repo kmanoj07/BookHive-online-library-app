@@ -1,4 +1,4 @@
-package com.kumarmanoj.springstartedgithublogin;
+package com.kumarmanoj.bookhive;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.user.OAuth2User;
