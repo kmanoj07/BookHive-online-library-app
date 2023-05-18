@@ -13,21 +13,21 @@ public class BookController {
     private final String COVER_IMAGE_ROUTE = "https://covers.openlibrary.org/b/id/";
     @Autowired
     private BookRepository bookRepository;
-   
-    @GetMapping(value="/books/{bookId}")
+
+    @GetMapping(value = "/books/{bookId}")
     public String getBook(@PathVariable String bookId, Model model) {
         Optional<Book> optionalBook = bookRepository.findById(bookId);
-        if(optionalBook.isPresent()){
+        if (optionalBook.isPresent()) {
             Book book = optionalBook.get();
             String coverImageUrl = "/images/no-image.png";
-            if(book.getCoverIds() != null && book.getCoverIds().size() > 0){
-                coverImageUrl = COVER_IMAGE_ROUTE + book.getCoverIds().get(0) + "-L.jpg";     
+            if (book.getCoverIds() != null && book.getCoverIds().size() > 0) {
+                coverImageUrl = COVER_IMAGE_ROUTE + book.getCoverIds().get(0) + "-L.jpg";
             }
             model.addAttribute("converImageUrl", coverImageUrl);
             model.addAttribute("book", book);
             return "book";
         }
-        
-        return "book-not-found"; 
+
+        return "book-not-found";
     }
 }

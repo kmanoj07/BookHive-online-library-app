@@ -18,8 +18,8 @@ public class BookhiveApp {
     }
 
     @Bean
-	public CqlSessionBuilderCustomizer sessionBuilderCustomizer(DataStaxAstraProperties astraProperties) {
-		Path bundle = astraProperties.getSecureConnectBundle().toPath();
-		return builder -> builder.withCloudSecureConnectBundle(bundle);
-	}
+    public CqlSessionBuilderCustomizer sessionBuilderCustomizer(DataStaxAstraProperties astraProperties) {
+        Path bundle = astraProperties.getSecureConnectBundle().toPath();
+        return builder -> builder.withCloudSecureConnectBundle(bundle);
+    }
 }
