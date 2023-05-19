@@ -15,7 +15,7 @@ Build your reading habbits. Track the books you read, review it and fuel your re
     <img src="/bookhive-images/loging.png" width="600px"/>
  </div>
   <div> 
-    <p>User can browser the library of extensive books by searching with tite.<p>
+    <p>User can browser the library of extensive books by searching with title.<p>
     <img src="/bookhive-images/search.png" width="600px"/>
  </div>
   <div> 
@@ -31,5 +31,18 @@ Build your reading habbits. Track the books you read, review it and fuel your re
      <li>Finished</li>
      <li>Do not finished<l/i>
   </ul>
-   <img src="/bookhive-images/trackbook.png" width="600px"/>
+   <img src="/bookhive-images/trackbook-status.png" width="600px"/>
+ </div>
+ <div>
+  <p>Modified your Reading Completion date</p>
+  <img src="/bookhive-images/trackbook-calender.png" width="600px"/>
+ </div>
+      <div>
+        <p>Track Rating</p>
+       <img src="/bookhive-images/trackbook-rating.png" width="600px"/>
+      </div>
+ 
+ <div>
+  Overall the Bookhive is a highly scalable and available application as it handles the big data using Cassandra node on CLUSTER. Where user can browse millions of books and build their reading habit.
+  Feel free to contribute and add new feature to this application such as navigate to authors page via link and show the author's book.
  </div>
