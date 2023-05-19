@@ -10,22 +10,22 @@
 <body>
    
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom:1rem">
+        <nav class="navbar navbar-light bg-light mb-3">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">
                 <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
               </a>
+              <div th:insert="components/book-search :: search-panel"></div>
             </div>
-        </nav>
-        
-        <div th:insert="components/book-search :: search-panel">
-
-        </div>
+          </nav>
         
         <section class="content">
-            <h1>Book not found!</h1>
+            <div class="col-lg-6 mx-auto text-center">
+                <h5>Book not found! Please search another one</h5>
+            </div>
         </section>
     </div> 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

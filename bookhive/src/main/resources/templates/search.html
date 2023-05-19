@@ -10,23 +10,20 @@
 <body>
 
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom: 1rem">
+        <nav class="navbar navbar-light bg-light mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
-                </a>
+              <a class="navbar-brand" href="/">
+                <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
+              </a>
+              <div th:insert="components/book-search :: search-panel"></div>
             </div>
-        </nav>
-         
-        <div th:insert="components/book-search :: search-panel">
-
-        </div>
+          </nav>
         
         <section class="content">
             
             <div class="card-group">
                 
-                <div class="card" style="flex: 0 0 18%; margin: 30px;" th:each="result: ${searchResults}">
+                <div class="card" style="flex: 0 0 20%; margin: 30px;" th:each="result: ${searchResults}">
                     <img th:src="${result.cover_i}" src="#" class="card-img-top" alt="cover-img">
                     <div class="card-body">
                       <h5 class="card-title" th:text="${result.title}">Card title</h5>

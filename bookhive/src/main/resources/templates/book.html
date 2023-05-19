@@ -10,18 +10,14 @@
 <body>
 
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom:1rem">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
-              </a>
-            </div>
-        </nav>
-        
-        <div th:insert="components/book-search :: search-panel">
-
-        </div>
-        
+        <nav class="navbar navbar-light bg-light  mb-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
+            </a>
+            <div th:insert="components/book-search :: search-panel"></div>
+          </div>
+        </nav>  
         <section class="content">
             <div class="card mb-3">
                 <div class="row g-0">

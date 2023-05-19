@@ -10,38 +10,39 @@
 <body>
 
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom:1rem">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
-              </a>
-            </div>
-        </nav>
-        
-        <div th:insert="components/book-search :: search-panel"></div>
-        
+        <nav class="navbar navbar-light bg-light  mb-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <h1 class="display-5 fw-bold"><span style="color:cadetblue">Book</span><span>Hive</span></h1>
+            </a>
+            <div th:insert="components/book-search :: search-panel"></div>
+          </div>
+        </nav>  
         <section class="content">
-            <h1>My Books</h1>
+            <h4>My Books</h4>
             <div th:each="book: ${booksByUser}">
+              <div class="card-group">
                 <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img th:src="${book.coverUrl}" class="img-fluid rounded-start" alt="cover-img">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <a  th:href="@{'/books/' + ${book.bookId}}" class="card-title fw-bold" th:text="${book.bookName}">Book Name</a>
-                          <p class="card-text display-5" th:text="${book.authorNames}">Author Name</p>
-                          <p class="card-text" th:text="${book.readingStatus}">Reading status</p>
-                          <p class="card-text">Rating:
-                            <span style="color:purple" th:each="rating:  ${#numbers.sequence(0, book.rating - 1)}">
-                                &#9733;
-                            </span>
-                          </p>
-                        </div>
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img th:src="${book.coverUrl}" class="img-fluid rounded-start" alt="cover-img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <a  th:href="@{'/books/' + ${book.bookId}}" class="card-title fw-bold" th:text="${book.bookName}">Book Name</a>
+                        <p class="card-text display-5" th:text="${book.authorNames}">Author Name</p>
+                        <p class="card-text" th:text="${book.readingStatus}">Reading status</p>
+                        <p class="card-text">Rating:
+                          <span style="color:purple" th:each="rating:  ${#numbers.sequence(0, book.rating - 1)}">
+                              &#9733;
+                          </span>
+                        </p>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+               
             </div>
         </section>
     </div>
