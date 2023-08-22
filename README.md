@@ -4,13 +4,13 @@ Build your reading habbits. Track the books you read, review it and fuel your re
 # Application tier
 - Backend: Java, Spring Boot Framework
 - Database: NoSQL (Cassandra DB)
-- cloud: Hosted Cassandra instance on Goole gloud
+- cloud: Hosted Cassandra instance on Google cloud
 - Front end: HTML/CSS/JAVASCRIPT/Thymeleaf template
-- Auth: Spring Security (github OAuthentication)
+- Auth: Spring Security (github OAuth2.0 OAuthentication)
 
 # Application Features
  <div> 
-    <p>User can login into bookhive App using there Github login.<p>
+    <p>User can login into Bookhive App using there Github login.<p>
     <p>Login can be extended via Google authentication as well.<p/>
     <img src="/bookhive-images/loging.png" width="600px"/>
  </div>
@@ -19,13 +19,13 @@ Build your reading habbits. Track the books you read, review it and fuel your re
     <img src="/bookhive-images/search.png" width="600px"/>
  </div>
   <div> 
-  <p>Users are not restricted to searc the library even if they are not logged in</p>
+  <p>Users are not restricted to search the library even if they are not logged in</p>
       <p>Track the book the need to log into the applicaiton.<p>
     <img src="/bookhive-images/notloggedin.png" width="600px"/>
  </div>
  
  <div> 
-  <p>Once User Logged in . They can allow to track the book and mark the status as following.</p>
+  <p>Once User Logged in. It allow to track the book and mark the status as following.</p>
   <ul>
      <li>Reading</li>
      <li>Finished</li>
